@@ -1,0 +1,19 @@
+{
+  "name": "ReactNativeCoffee",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh"
+  },
+  "dependencies": {
+    "react-native": "^0.3.0"
+  },
+  "devDependencies": {
+    "coffee-react-transform": "^3.0.1",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-exec": "^2.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-util": "^3.0.4"
+  }
+}
