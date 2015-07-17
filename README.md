@@ -1,20 +1,18 @@
 React Native Boilerplate using CoffeeScript
 ================
 
-1 - git clone it
+Use CoffeeScript and Gulp to build a React Native app. Enjoy :)
 
-2 - cd ReactNativeBoilerplate
+# Getting started
 
-3 - npm install
+1. Clone repository and `cd` into project directory.
+2. Install global dependencies.
+   `npm install -g gulp coffee-react-transform`
+3. Install project dependencies.
+   `npm install`
 
-4 - npm install -g coffee-react-transform
+# Usage
 
-5 - open ReactNativeCoffee.xcodeproj
-
-6 - Click in 'Build'
-
-7 - Run 'gulp'
-
-8 - Run 'npm start'
-
-9 - Enjoy! :)
+1. Run `gulp` from the project directory to start the Gulp watcher.
+2. In another terminal session, run `npm start` to start the react watcher.
+3. Open **ReactNativeCoffee.xcodeproj** in Xcode and run the project.
