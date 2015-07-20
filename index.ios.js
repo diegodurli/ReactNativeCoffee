@@ -1,4 +1,3 @@
-'use strict';
 var App, AppRegistry, React;
 
 React = require('react-native');

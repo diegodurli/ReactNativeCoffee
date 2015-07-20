@@ -2,7 +2,7 @@ React = require 'react-native'
 { StyleSheet, Text, View } = React
 
 MyCustomView = React.createClass
-	render: ->
+  render: ->
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Welcome to React Native! :)
@@ -18,14 +18,14 @@ styles = StyleSheet.create
     flex: 1
     justifyContent: 'center'
     alignItems: 'center'
-    backgroundColor: '#512DA8'
+    backgroundColor: '#4CAF50'
   welcome:
     fontSize: 20
     textAlign: 'center'
-    color: '#FFFFFF'
+    color: '#C8E6C9'
     margin: 10
   instructions:
     textAlign: 'center'
-    color: '#8BC34A'
+    color: '#FFFFFF'
 
 module.exports = MyCustomView

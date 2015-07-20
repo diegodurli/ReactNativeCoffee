@@ -2,6 +2,7 @@ var gulp   = require('gulp');
 var gutil  = require('gulp-util');
 var coffee = require('gulp-coffee');
 var exec   = require('gulp-exec');
+var lint   = require('gulp-coffeelint');
 var rename = require('gulp-rename');
 
 var config = {
@@ -15,7 +16,7 @@ var config = {
 
 gulp.task('build', function() {
   var options = {
-    continueOnError: false, // default = false, true means don't emit error event 
+    continueOnError: false, // default = false, true means don't emit error event
     pipeStdout: true
   };
 
@@ -24,13 +25,15 @@ gulp.task('build', function() {
     .pipe(rename(function (path) {
       path.extname = '.js';
     }))
+    .pipe(lint())
+    .pipe(lint.reporter())
     .pipe(coffee({bare: true}).on('error', gutil.log))
     .pipe(gulp.dest(config.files.dist));
 });
 
 gulp.task('cjsx', ['build'], function() {
   var options = {
-    continueOnError: false, // default = false, true means don't emit error event 
+    continueOnError: false, // default = false, true means don't emit error event
   	pipeStdout: true
   };
 
