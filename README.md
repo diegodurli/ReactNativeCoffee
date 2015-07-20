@@ -5,7 +5,7 @@ Use CoffeeScript and Gulp to build a React Native app. Enjoy :)
 
 # What is new!
  - Newer version of React Native
- - CoffeeLint added, showing errors and warnings on Console
+ - `CoffeeLint` added, showing errors and warnings on Console
 
 # Getting started
 
